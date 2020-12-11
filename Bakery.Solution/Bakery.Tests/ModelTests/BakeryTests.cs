@@ -27,14 +27,14 @@ namespace Bakery.Tests
     public void BreadPriceGet_GetStaticPrice_Int()
     {
       int expect = 0;
-      Assert.AreEqual(null, Bread.Price);
+      Assert.AreEqual(expect, Bread.Price);
     }
-    [TestMethod]
-    public void PastryPriceGet_GetStaticPrice_Int()
-    {
-      int expect = 0;
-      Assert.AreEqual(expect, Pastry.Price);
-    }
+    // [TestMethod]
+    // public void PastryPriceGet_GetStaticPrice_Int()
+    // {
+    //   int expect = 0;
+    //   Assert.AreEqual(expect, Pastry.Price);
+    // }
     
   }
 }
