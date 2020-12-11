@@ -22,5 +22,19 @@ namespace Bakery.Tests
       int expect = 5;
       Assert.AreEqual(expect, Pastry.Amount);
     }
+
+    [TestMethod]
+    public void BreadPriceGet_GetStaticPrice_Int()
+    {
+      int expect = 0;
+      Assert.AreEqual(null, Bread.Price);
+    }
+    [TestMethod]
+    public void PastryPriceGet_GetStaticPrice_Int()
+    {
+      int expect = 0;
+      Assert.AreEqual(expect, Pastry.Price);
+    }
+    
   }
 }
