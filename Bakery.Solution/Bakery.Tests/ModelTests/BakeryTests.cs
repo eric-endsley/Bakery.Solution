@@ -39,10 +39,10 @@ namespace Bakery.Tests
     public void BreadPriceCalc_AddFivePricePerBread_Int()
     {
       Bread.Amount = 2;
-      Bread.PriceCalc(BreadAmount);
+      Bread.PriceCalc(Bread.Amount);
       int expect = 10;
 
-      Assert.AreEqual(expect, Bread.Price)
+      Assert.AreEqual(expect, Bread.Price);
     }
     
   }
