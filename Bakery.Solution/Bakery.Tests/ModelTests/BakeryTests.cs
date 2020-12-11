@@ -62,5 +62,14 @@ namespace Bakery.Tests
 
       Assert.AreEqual(expect, Pastry.Price);
     }
+    [TestMethod]
+    public void PastryPriceCalc_ThirdPastryAddHalfPrice_Void()
+    {
+      Pastry.Amount = 3;
+      Pastry.PriceCalc(Pastry.Amount);
+      int expect = 5;
+
+      Assert.AreEqual(expect, Pastry.Price);
+    }
   }
 }
