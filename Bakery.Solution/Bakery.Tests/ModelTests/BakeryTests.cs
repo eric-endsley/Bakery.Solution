@@ -35,6 +35,15 @@ namespace Bakery.Tests
       int expect = 0;
       Assert.AreEqual(expect, Pastry.Price);
     }
+    [TestMethod]
+    public void BreadPriceCalc_AddFivePricePerBread_Int()
+    {
+      Bread.Amount = 2;
+      Bread.PriceCalc(BreadAmount);
+      int expect = 10;
+
+      Assert.AreEqual(expect, Bread.Price)
+    }
     
   }
 }
