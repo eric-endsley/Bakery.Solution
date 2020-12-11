@@ -29,12 +29,12 @@ namespace Bakery.Tests
       int expect = 0;
       Assert.AreEqual(expect, Bread.Price);
     }
-    // [TestMethod]
-    // public void PastryPriceGet_GetStaticPrice_Int()
-    // {
-    //   int expect = 0;
-    //   Assert.AreEqual(expect, Pastry.Price);
-    // }
+    [TestMethod]
+    public void PastryPriceGet_GetStaticPrice_Int()
+    {
+      int expect = 0;
+      Assert.AreEqual(expect, Pastry.Price);
+    }
     
   }
 }
