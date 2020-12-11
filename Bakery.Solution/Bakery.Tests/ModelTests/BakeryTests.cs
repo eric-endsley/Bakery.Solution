@@ -15,12 +15,12 @@ namespace Bakery.Tests
       int expect = 3;
       Assert.AreEqual(expect, Bread.Amount);
     }
-    // [TestMethod]
-    // public void PastryAmountGetSet_GetSetStaticAmount_Int()
-    // {
-    //   Pastry.Amount = 5;
-    //   int result = Pastry.Amount;
-    //   Assert.AreEqual(result, Pastry.Amount);
-    // }
+    [TestMethod]
+    public void PastryAmountGetSet_GetSetStaticAmount_Int()
+    {
+      Pastry.Amount = 5;
+      int expect = 5;
+      Assert.AreEqual(expect, Pastry.Amount);
+    }
   }
 }

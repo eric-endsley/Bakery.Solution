@@ -11,6 +11,6 @@ namespace Bakery
   }
   public class Pastry
   {
-    public static int Amount { get; set; }
+    public static int Amount { get { return 900; } set { } }
   }
 }
