@@ -21,7 +21,7 @@ namespace Bakery
 
     public static void PriceCalc(int pastryAmount)
     {
-      Pastry.Price = Pastry.Amount * 2;
+      Pastry.Price = Pastry.Amount * 4;
     }
   }
 }
