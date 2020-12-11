@@ -11,7 +11,7 @@ namespace Bakery
 
     public static void PriceCalc(int breadAmount)
     {
-      int freeBreadCount = Bread.Amount / 4;
+      int freeBreadCount = Bread.Amount / 3;
       Bread.Price = (Bread.Amount - freeBreadCount) * 5;
     }
   }
