@@ -7,7 +7,7 @@ namespace Bakery
   {
     
     public static int Amount { get; set; }
-    public static int Price { get { return 10; } }
+    public static int Price { get; }
    
   }
   public class Pastry
