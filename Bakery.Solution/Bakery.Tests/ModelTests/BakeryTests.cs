@@ -45,7 +45,7 @@ namespace Bakery.Tests
       Assert.AreEqual(expect, Bread.Price);
     }
     [TestMethod]
-    public void BreadPriceCalc_EachThirdBreadCostZero_Int()
+    public void BreadPriceCalc_EachThirdBreadCostZero_Void()
     {
       Bread.Amount = 3;
       Bread.PriceCalc(Bread.Amount);
@@ -53,7 +53,6 @@ namespace Bakery.Tests
 
       Assert.AreEqual(expect, Bread.Price);
     }
-    
     
   }
 }
