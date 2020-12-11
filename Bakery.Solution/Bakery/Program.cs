@@ -6,7 +6,7 @@ namespace Bakery
   {
     public static void Main()
     {
-      
+
     }
   }
 }
