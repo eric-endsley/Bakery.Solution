@@ -44,6 +44,16 @@ namespace Bakery.Tests
 
       Assert.AreEqual(expect, Bread.Price);
     }
+    [TestMethod]
+    public void BreadPriceCalc_EachThirdBreadCostZero_Int()
+    {
+      Bread.Amount = 3;
+      Bread.PriceCalc(Bread.Amount);
+      int expect = 10;
+
+      Assert.AreEqual(expect, Bread.Price);
+    }
+    
     
   }
 }
