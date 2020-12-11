@@ -5,7 +5,6 @@ namespace Bakery
 {
   public class Bread 
   {
-    
     public static int Amount { get; set; }
     public static int Price { get; private set; }
 
@@ -19,5 +18,10 @@ namespace Bakery
   {
     public static int Amount { get; set; }
     public static int Price { get; private set; }
+
+    public static void PriceCalc(int pastryAmount)
+    {
+      Pastry.Price = Pastry.Amount * 2;
+    }
   }
 }
