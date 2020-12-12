@@ -14,7 +14,7 @@ namespace Bakery
       "Pastries cost 2 moon rocks each, and every 3rd pastry is half off. \n" +
       "\n" +
       "And don't even think of trying to fool us with plain old Earth Rocks. \n" +
-      "The last guy who tried that got launched into the void of space! \n";
+      "The last person who tried that got launched into the void of space! \n";
 
       Console.WriteLine(welcome);
       Thread.Sleep(4000);
