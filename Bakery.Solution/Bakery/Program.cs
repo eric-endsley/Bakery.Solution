@@ -29,7 +29,9 @@ namespace Bakery
       Bread.PriceCalc(breadAmount);
       Pastry.PriceCalc(pastryAmount);
       int totalPrice = Bread.Price + Pastry.Price;
-;
+
+      Thread.Sleep(1000);
+      Console.WriteLine("\nGreat! That will cost you " + totalPrice + " moon rocks.");
     }
   }
 }
