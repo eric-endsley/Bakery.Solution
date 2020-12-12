@@ -23,15 +23,13 @@ namespace Bakery
       Thread.Sleep(1000);
       Console.WriteLine("And how many pastries would you like?");
       int pastryAmount = int.Parse(Console.ReadLine());
-
+      
       Bread.Amount = breadAmount;
       Pastry.Amount = pastryAmount;
       Bread.PriceCalc(breadAmount);
       Pastry.PriceCalc(pastryAmount);
       int totalPrice = Bread.Price + Pastry.Price;
-
-      Console.WriteLine("That will cost you" + totalPrice + "moon rocks.")
-      
+;
     }
   }
 }
