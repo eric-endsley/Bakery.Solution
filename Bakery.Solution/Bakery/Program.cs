@@ -1,5 +1,6 @@
 using System;
 using System.Threading;
+using Bakery.Models;
 
 namespace Bakery
 {
@@ -26,8 +27,8 @@ namespace Bakery
       
       Bread.Amount = breadAmount;
       Pastry.Amount = pastryAmount;
-      Bread.PriceCalc(breadAmount);
-      Pastry.PriceCalc(pastryAmount);
+      Bread.PriceCalc();
+      Pastry.PriceCalc(); 
       int totalPrice = Bread.Price + Pastry.Price;
 
       Thread.Sleep(1000);

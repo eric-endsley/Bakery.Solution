@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery;
+using Bakery.Models;
 
 namespace Bakery.Tests
 {
@@ -39,7 +39,7 @@ namespace Bakery.Tests
     public void BreadPriceCalc_AddFivePricePerBread_Int()
     {
       Bread.Amount = 2;
-      Bread.PriceCalc(Bread.Amount);
+      Bread.PriceCalc();
       int expect = 10;
 
       Assert.AreEqual(expect, Bread.Price);
@@ -48,7 +48,7 @@ namespace Bakery.Tests
     public void BreadPriceCalc_ThirdBreadAddZeroPrice_Void()
     {
       Bread.Amount = 3;
-      Bread.PriceCalc(Bread.Amount);
+      Bread.PriceCalc();
       int expect = 10;
 
       Assert.AreEqual(expect, Bread.Price);
@@ -57,7 +57,7 @@ namespace Bakery.Tests
     public void PastryPriceCalc_AddTwoPricePerPastry_Void()
     {
       Pastry.Amount = 2;
-      Pastry.PriceCalc(Pastry.Amount);
+      Pastry.PriceCalc();
       int expect = 4;
 
       Assert.AreEqual(expect, Pastry.Price);
@@ -66,7 +66,7 @@ namespace Bakery.Tests
     public void PastryPriceCalc_ThirdPastryAddHalfPrice_Void()
     {
       Pastry.Amount = 3;
-      Pastry.PriceCalc(Pastry.Amount);
+      Pastry.PriceCalc();
       int expect = 5;
 
       Assert.AreEqual(expect, Pastry.Price);
